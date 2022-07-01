@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+/** @format */
+body {
+  color: white !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  background: rgb(0, 32, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(61, 151, 163, 0.911) 0%,
+    rgba(0, 198, 255, 1) 44%
+  );
+}
+.weather-poster {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/18/21/32/dark-1836972_960_720.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+  height: 300px;
+  border: 1px white solid;
+  border-radius: 100px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  position: absolute !important;
+  top: 15% !important;
+  width: 700px !important;
+  left: 30% !important;
+}
+input {
+  position: relative;
+  display: inline-block !important;
+  font-size: 20px !important;
+  box-sizing: border-box !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  width: 450px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 25px 0 0 25px;
+}
+input[type="button"] {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  background-color: coral;
+}
+input[type="button"]:hover {
+  box-shadow: 1px 4px 12px 9px rgba(190, 191, 192, 0.82);
+  background-color: gold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+  background-color: inherit !important;
+  border: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* #searchBtn {
+  width: 100px;
+  height: 45px;
+  background-color: rgb(21, 135, 29);
+  border: none;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#searchBtn:hover {
+  box-shadow: 1px 4px 12px 9px rgba(190, 191, 192, 0.82);
+} */
+.details {
+  max-width: 250px;
+  width: 210px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 4px 9px rgba(140, 107, 59, 0.82);
+}
+.weather-section {
+  padding: 20px;
+  border-radius: 10px;
 }
